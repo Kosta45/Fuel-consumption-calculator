@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url("/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+    fonst-style: normal;
+    font-weight: normal;
+}
+
+.box {
+    /* background-color: #2A224F; */
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(60, 21, 124, 0) 0%, #2A224F 80%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    margin-right: 950px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.header-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header {
+    position: absolute;
+    width: 1400px;
+    left: 0px;
+    top: 0px;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: relative;
+    width: 196px;
+    height: 24px;
+    left: 690px;
+    top: 20px;
+    font-family: Inter;
+    font-weight: 600;
+}
+
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    position: relative;
+    width: 406px;
+    height: 10px;
+    left: 380px;
+    top: 100px;
+}
+
+.generic {
+    position: relative;
+}
+
+.span-info {
+    font-size: 19px;
+    font-family: Inter;
+    font-weight: 500;
+}
+
+.box_data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.data {
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 220px;
+
+    width: 600px;
+    height: 350px;
+
+    background: #ffffff;
+
+    border: 1px solid #DDDCE0;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+
+}
+
+h1 {
+    font-family: inter;
+    font-weight: 700;
+}
+
+input {
+    box-sizing: border-box;
+
+    width: 200px;
+    height: 45px;
+
+    /* Neutral / Grey */
+
+    border: 3px solid #72698c;
+    border-radius: 8px;
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.form-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    box-sizing: border-box;
+
+    width: 200px;
+    height: 45px;
+
+    /* Neutral / Grey */
+
+    border: 3px solid #72698c;
+    border-radius: 8px;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.span-result {
+    font-family: Inter;
+    font-weight: 200;
+    font-size: small;
+}
+
+.vertical {
+    border-left: 4px solid rgb(102, 82, 137);
+    height: 300px;
+    border-radius: 3px;
+    margin-right: 50px;
+}
+
+.btn_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -25px;
+    user-select: none;
+}
+
+
+
+.btn {
+
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    column-rule: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #d24136, #40215e, rgb(97, 66, 199), #d24136);
+    border: #ffffff 2px solid;
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+    color: #ffffff;
+    font-size: 25px;
+    letter-spacing: 2px;
+
+}
+
+.btn:hover {
+    animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+.btn::before {
+    content: "";
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #d24136, #40215e, rgb(97, 66, 199), #d24136);
+    background-size: 400px;
+    border-radius: 40px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.btn:hover::before {
+    filter: blur(20px);
+    opacity: 1;
+}
+
+
+/* Для мобилок / For mobile */
+
+@media screen and (max-width: 800px) {
+    .data {
+        width: 420px;
+        height: 360px;
+    }
+
+    input {
+        width: 120px;
+        height: 35px;
+    }
+
+    p {
+        width: 120px;
+        height: 35px;
+        padding: 5px;
+    }
+
+    .vertical {
+        border-left: 4px solid rgb(102, 82, 137);
+        height: 300px;
+        border-radius: 3px;
+        margin-right: 45px;
+    }
+
+
+
+}
