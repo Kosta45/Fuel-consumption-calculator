@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap" rel="stylesheet">
+    <!-- <script src="click.js" defer></script> -->
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="box">
+        <div class="container">
+            <div class="header_name">
+                <span class="text">Calculator for your auto</span>
+            </div>
+
+            <div class="mid">
+                <div class="title">
+                    <h1 class="generic">Generic Calculator</h1>
+                    <span class="span-info">Калькулятор витрат палива</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="box_data">
+
+            <div class="data">
+
+                <div class="input">
+                    <form action="">
+                        <input id="distance" type="number" placeholder="Відстань км.">
+                        <input id="consumption" type="number" placeholder="Витрата палива на 100 км.">
+                        <input id="cost_gas" type="number" placeholder="Вартість 1 л. палива">
+                    </form>
+                </div>
+
+                <div class=" vertical">
+                </div>
+
+                <div class="result">
+                    <form action="" class="form-result">
+                        <span class="span-result">Потрібно палива л.:</span>
+                        <p id="amount" type="text"></p>
+                        <span class="span-result">Вартість поїздки грн.:</span>
+                        <p id="cost" type="text"></p>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="btn_box">
+            <a class="btn" href="#" type="submit">Расчитать</a>
+        </div>
+    </div>
+</body>
+
+
+</html>
